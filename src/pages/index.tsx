@@ -17,7 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
         quality={100}
         placeholder="blurred"
       />
-      <Form
+      {/* <Form
         onSubmit={(values, { reset }) => {
           console.log(values);
           reset();
@@ -91,7 +91,38 @@ const IndexPage: React.FC<PageProps> = () => {
             </button>
           </form>
         )}
-      </Form>
+      </Form> */}
+      <form
+        name="contact"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        method="POST"
+        className="border-2 border-[rebeccapurple] gap-4 flex flex-col p-10"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <div className="flex flex-col gap-1">
+          <input
+            className="p-4 text-base border-2 border-gray-300 rounded-md"
+            type="text"
+            name="name"
+            required
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <input
+            className="p-4 text-base border-2 border-gray-300 rounded-md"
+            name="message"
+            type="textarea"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="p-2 px-4 rounded-lg bg-purple-700 hover:bg-purple-500 disabled:bg-gray-400 text-white"
+        >
+          Küldés
+        </button>
+      </form>
     </main>
   );
 };
