@@ -31,7 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
             method="POST"
             className="border-2 border-[rebeccapurple] gap-4 flex flex-col p-10"
             onSubmit={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
               submit();
             }}
           >
