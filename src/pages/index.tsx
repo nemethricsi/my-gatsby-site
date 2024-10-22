@@ -43,6 +43,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <input
                     className="p-4 text-base border-2 border-gray-300 rounded-md"
                     type="text"
+                    name="name"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     onBlur={onBlur}
@@ -64,6 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <div className="flex flex-col gap-1">
                   <input
                     className="p-4 text-base border-2 border-gray-300 rounded-md"
+                    name="message"
                     type="textarea"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
