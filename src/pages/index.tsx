@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         method="post"
-        action="/pages/success"
+        action="src/pages/success"
         className="border-2 border-[rebeccapurple] gap-4 flex flex-col p-10"
       >
         <input type="hidden" name="form-name" value="contact" />
