@@ -31,11 +31,11 @@ const IndexPage: React.FC<PageProps> = () => {
             method="POST"
             className="border-2 border-[rebeccapurple] gap-4 flex flex-col p-10"
             onSubmit={(e) => {
-              // e.preventDefault();
+              e.preventDefault();
               submit();
             }}
           >
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <Field<string>
               name="name"
               initialValue={""}
