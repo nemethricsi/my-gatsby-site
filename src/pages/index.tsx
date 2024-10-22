@@ -27,6 +27,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <form
             name="contact"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             method="POST"
             className="border-2 border-[rebeccapurple] gap-4 flex flex-col p-10"
             onSubmit={(e) => {
@@ -34,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
               submit();
             }}
           >
+            <input type="hidden" name="contact" value="contact" />
             <Field<string>
               name="name"
               initialValue={""}
