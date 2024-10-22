@@ -35,6 +35,9 @@ importers:
       gatsby-transformer-sharp:
         specifier: ^5.13.1
         version: 5.13.1(gatsby-plugin-sharp@5.13.1(gatsby@5.13.7(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.6.3))(graphql@16.9.0))(gatsby@5.13.7(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.6.3))(graphql@16.9.0)
+      houseform:
+        specifier: ^1.13.0
+        version: 1.13.0(react@18.3.1)(zod@3.23.8)
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
@@ -47,6 +50,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.14
         version: 3.4.14
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
     devDependencies:
       '@types/node':
         specifier: ^20.11.19
@@ -3275,6 +3281,12 @@ packages:
     resolution: {integrity: sha512-aXpmwoOhRBrw6X3j0h5RloK4x1OzsxMPyxqIHyNfSe2pypkVTZFpEiRoSipPEPlMrh0HW/XsjkJ5WgnCirpNUw==}
     engines: {node: '>=10'}
 
+  houseform@1.13.0:
+    resolution: {integrity: sha512-n3C7krxwO4uNmmp7hi4sd6+7ZiTv7DJ/WHpVhOHfxTgA4tdRqJq2k1ybLMNDv9/S1kXEYAvKn6yuQLyv0Vzq2Q==}
+    peerDependencies:
+      react: '>=16.8.0'
+      zod: '>=3.9.0'
+
   html-entities@2.5.2:
     resolution: {integrity: sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA==}
 
@@ -5720,6 +5732,9 @@ packages:
   yurnalist@2.1.0:
     resolution: {integrity: sha512-PgrBqosQLM3gN2xBFIMDLACRTV9c365VqityKKpSTWpwR+U4LAFR3rSVyEoscWlu3EzX9+Y0I86GXUKxpHFl6w==}
     engines: {node: '>=4.0.0'}
+
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -10093,6 +10108,11 @@ snapshots:
     dependencies:
       lru-cache: 6.0.0
 
+  houseform@1.13.0(react@18.3.1)(zod@3.23.8):
+    dependencies:
+      react: 18.3.1
+      zod: 3.23.8
+
   html-entities@2.5.2: {}
 
   htmlparser2@6.1.0:
@@ -12637,3 +12657,5 @@ snapshots:
       is-ci: 2.0.0
       read: 1.0.7
       strip-ansi: 5.2.0
+
+  zod@3.23.8: {}
